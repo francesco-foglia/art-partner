@@ -1,263 +1,265 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
-      integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <link rel="icon" href="https://www.artpartner.com/propeller/uploads/2018/08/32x32.png" sizes="32x32">
-    <link rel="icon" href="https://www.artpartner.com/propeller/uploads/2018/08/32x32.png" sizes="192x192">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Art Partner</title>
-  </head>
-  <body>
 
-    <div id="root">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+    integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <link rel="icon" href="https://www.artpartner.com/propeller/uploads/2018/08/32x32.png" sizes="32x32">
+  <link rel="icon" href="https://www.artpartner.com/propeller/uploads/2018/08/32x32.png" sizes="192x192">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Art Partner</title>
+</head>
 
-      <header>
-        <a href="https://www.artpartner.com/">
-          <img src="img/logo.svg" alt="logo">
-        </a>
-        <div class="hamburger-icon">
-          <div class="top"></div>
-          <div class="middle"></div>
-          <div class="bottom"></div>
-        </div>
-        <div class="menu">
-          <ul class="links">
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-            <li>
-              <a href="#">CONTACT / 联系我们</a>
-            </li>
-            <li>
-              <a href="#">EXHIBITIONS & EDITIONS</a>
-            </li>
-            <li>
-              <a href="#">LICENSING</a>
-            </li>
-            <li>
-              <a href="#">EARTH PARTNER</a>
-            </li>
-            <li>
-              <a href="#">360 & EXPERIENTIAL</a>
-            </li>
-            <li>
-              <a href="#">HEALTH PROTOCOLS</a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-          <ul class="links">
-            <li>
-              <a href="#">FILM & PRINT</a>
-            </li>
-            <li>
-              <ul class="staff" v-for="(name, index) in staff_1">
-                <li>
-                  <a href="#">{{ name }}</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">FASHION & CREATIVE CONSULTANT</a>
-            </li>
-            <li>
-              <ul class="staff" v-for="(name, index) in staff_2">
-                <li>
-                  <a href="#">{{ name }}</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="links">
-            <li>
-              <a href="#">CREATIVE DIRECTION</a>
-            </li>
-            <li>
-              <ul class="staff" v-for="(name, index) in staff_3">
-                <li>
-                  <a href="#">{{ name }}</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">STYLE</a>
-            </li>
-            <li>
-              <ul class="staff" v-for="(name, index) in staff_4">
-                <li>
-                  <a href="#">{{ name }}</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="links">
-            <li>
-              <a href="#">BEAUTY</a>
-            </li>
-            <li>
-              <ul class="staff" v-for="(name, index) in staff_5">
-                <li>
-                  <a href="#">{{ name }}</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </header>
+<body>
 
-      <main>
+  <div id="root">
 
-        <div class="column">
+    <header>
+      <a href="https://www.artpartner.com/" target="_blank" rel="noopener noreferrer nofollow">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+      <div class="hamburger-icon">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="menu">
+        <ul class="links">
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">CONTACT / 联系我们</a>
+          </li>
+          <li>
+            <a href="#">EXHIBITIONS & EDITIONS</a>
+          </li>
+          <li>
+            <a href="#">LICENSING</a>
+          </li>
+          <li>
+            <a href="#">EARTH PARTNER</a>
+          </li>
+          <li>
+            <a href="#">360 & EXPERIENTIAL</a>
+          </li>
+          <li>
+            <a href="#">HEALTH PROTOCOLS</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="links">
+          <li>
+            <a href="#">FILM & PRINT</a>
+          </li>
+          <li>
+            <ul class="staff" v-for="(name, index) in staff_1">
+              <li>
+                <a href="#">{{ name }}</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">FASHION & CREATIVE CONSULTANT</a>
+          </li>
+          <li>
+            <ul class="staff" v-for="(name, index) in staff_2">
+              <li>
+                <a href="#">{{ name }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="links">
+          <li>
+            <a href="#">CREATIVE DIRECTION</a>
+          </li>
+          <li>
+            <ul class="staff" v-for="(name, index) in staff_3">
+              <li>
+                <a href="#">{{ name }}</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">STYLE</a>
+          </li>
+          <li>
+            <ul class="staff" v-for="(name, index) in staff_4">
+              <li>
+                <a href="#">{{ name }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="links">
+          <li>
+            <a href="#">BEAUTY</a>
+          </li>
+          <li>
+            <ul class="staff" v-for="(name, index) in staff_5">
+              <li>
+                <a href="#">{{ name }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-          <div class="slider-1">
+    <main>
 
-            <div class="slide"  v-for="slide in slider_1">
+      <div class="column">
 
-              <a href="#">
+        <div class="slider-1">
 
-                <div v-if="slide.img != '' ">
-                  <img :src="slide.img" :alt="slide.title">
+          <div class="slide" v-for="slide in slider_1">
+
+            <a href="#">
+
+              <div v-if="slide.img != '' ">
+                <img :src="slide.img" :alt="slide.title">
+              </div>
+
+              <div v-if="slide.video != '' ">
+                <video :width="slide.width" :height="slide.height" autoplay loop muted>
+                  <source :src="slide.video" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="overlay">
+                <div class="info">
+                  <h2>{{ slide.author }}</h2>
+                  <hr>
+                  <h3>{{ slide.brand }}</h3>
+                  <h3>{{ slide.title }}</h3>
                 </div>
+              </div>
 
-                <div v-if="slide.video != '' ">
-                  <video :width="slide.width" :height="slide.height" autoplay loop muted>
-                    <source :src="slide.video" type="video/mp4">
-                  </video>
-                </div>
-
-                <div class="overlay">
-                  <div class="info">
-                    <h2>{{ slide.author }}</h2>
-                    <hr>
-                    <h3>{{ slide.brand }}</h3>
-                    <h3>{{ slide.title }}</h3>
-                  </div>
-                </div>
-
-              </a>
-
-            </div>
+            </a>
 
           </div>
 
         </div>
 
-        <div class="column">
+      </div>
 
-          <div class="slider-2">
+      <div class="column">
 
-            <div class="slide" v-for="slide in slider_2">
+        <div class="slider-2">
 
-              <a href="#">
+          <div class="slide" v-for="slide in slider_2">
 
-                <div v-if="slide.img != '' ">
-                  <img :src="slide.img" :alt="slide.title">
+            <a href="#">
+
+              <div v-if="slide.img != '' ">
+                <img :src="slide.img" :alt="slide.title">
+              </div>
+
+              <div v-if="slide.video != '' ">
+                <video :width="slide.width" :height="slide.height" autoplay loop muted>
+                  <source :src="slide.video" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="overlay">
+                <div class="info">
+                  <h2>{{ slide.author }}</h2>
+                  <hr>
+                  <h3>{{ slide.brand }}</h3>
+                  <h3>{{ slide.title }}</h3>
                 </div>
+              </div>
 
-                <div v-if="slide.video != '' ">
-                  <video :width="slide.width" :height="slide.height" autoplay loop muted>
-                    <source :src="slide.video" type="video/mp4">
-                  </video>
-                </div>
-
-                <div class="overlay">
-                  <div class="info">
-                    <h2>{{ slide.author }}</h2>
-                    <hr>
-                    <h3>{{ slide.brand }}</h3>
-                    <h3>{{ slide.title }}</h3>
-                  </div>
-                </div>
-
-              </a>
-
-            </div>
+            </a>
 
           </div>
 
         </div>
 
-        <div class="column">
+      </div>
 
-          <div class="slider-3">
+      <div class="column">
 
-            <div class="slide" v-for="slide in slider_3">
+        <div class="slider-3">
 
-              <a href="#">
+          <div class="slide" v-for="slide in slider_3">
 
-                <div v-if="slide.img != '' ">
-                  <img :src="slide.img" :alt="slide.title">
+            <a href="#">
+
+              <div v-if="slide.img != '' ">
+                <img :src="slide.img" :alt="slide.title">
+              </div>
+
+              <div v-if="slide.video != '' ">
+                <video :width="slide.width" :height="slide.height" autoplay loop muted>
+                  <source :src="slide.video" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="overlay">
+                <div class="info">
+                  <h2>{{ slide.author }}</h2>
+                  <hr>
+                  <h3>{{ slide.brand }}</h3>
+                  <h3>{{ slide.title }}</h3>
                 </div>
+              </div>
 
-                <div v-if="slide.video != '' ">
-                  <video :width="slide.width" :height="slide.height" autoplay loop muted>
-                    <source :src="slide.video" type="video/mp4">
-                  </video>
-                </div>
-
-                <div class="overlay">
-                  <div class="info">
-                    <h2>{{ slide.author }}</h2>
-                    <hr>
-                    <h3>{{ slide.brand }}</h3>
-                    <h3>{{ slide.title }}</h3>
-                  </div>
-                </div>
-
-              </a>
-
-            </div>
+            </a>
 
           </div>
 
         </div>
 
-        <div class="column">
+      </div>
 
-          <div class="slider-4">
+      <div class="column">
 
-            <div class="slide" v-for="slide in slider_4">
+        <div class="slider-4">
 
-              <a href="#">
+          <div class="slide" v-for="slide in slider_4">
 
-                <div v-if="slide.img != '' ">
-                  <img :src="slide.img" :alt="slide.title">
+            <a href="#">
+
+              <div v-if="slide.img != '' ">
+                <img :src="slide.img" :alt="slide.title">
+              </div>
+
+              <div v-if="slide.video != '' ">
+                <video :width="slide.width" :height="slide.height" autoplay loop muted>
+                  <source :src="slide.video" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="overlay">
+                <div class="info">
+                  <h2>{{ slide.author }}</h2>
+                  <hr>
+                  <h3>{{ slide.brand }}</h3>
+                  <h3>{{ slide.title }}</h3>
                 </div>
+              </div>
 
-                <div v-if="slide.video != '' ">
-                  <video :width="slide.width" :height="slide.height" autoplay loop muted>
-                    <source :src="slide.video" type="video/mp4">
-                  </video>
-                </div>
-
-                <div class="overlay">
-                  <div class="info">
-                    <h2>{{ slide.author }}</h2>
-                    <hr>
-                    <h3>{{ slide.brand }}</h3>
-                    <h3>{{ slide.title }}</h3>
-                  </div>
-                </div>
-
-              </a>
-
-            </div>
+            </a>
 
           </div>
 
-          <!-- <a href="#">
+        </div>
+
+        <!-- <a href="#">
             <div class="slide">
               <iframe src="https://player.vimeo.com/video/538604513?background=true" frameborder="0" webkitallowfullscreen=""
                 mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
@@ -272,12 +274,13 @@
             </div>
           </a> -->
 
-        </div>
+      </div>
 
-      </main>
+    </main>
 
-    </div>
+  </div>
 
-    <script src="js/script.js" charset="utf-8"></script>
-  </body>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
 </html>

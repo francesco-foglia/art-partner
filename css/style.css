@@ -49,9 +49,9 @@ header img {
 .middle,
 .bottom {
   width: 30px;
-  height: 3.5px;
+  height: 2.5px;
   background-color: black;
-  transition: transform 0.5s;
+  transition: all 0.5s;
   position: absolute;
   top: 50%;
   left: 0%;
@@ -72,10 +72,12 @@ header img {
 
 .rotate-1 {
   transform: rotate(45deg);
+  height: 3.5px;
 }
 
 .rotate-2 {
   transform: rotate(-45deg);
+  height: 3.5px;
 }
 
 .opacity {
