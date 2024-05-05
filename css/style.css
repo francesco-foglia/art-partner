@@ -236,7 +236,7 @@ h3 {
   }
 
   100% {
-    transform: translateY(-142%);
+    transform: translateY(-140%);
   }
 
 }
@@ -244,7 +244,7 @@ h3 {
 @keyframes scroll-2 {
 
   0% {
-    transform: translateY(-192%);
+    transform: translateY(-190%);
   }
 
   100% {
@@ -260,7 +260,7 @@ h3 {
   }
 
   100% {
-    transform: translateY(-132%);
+    transform: translateY(-130%);
   }
 
 }
@@ -268,8 +268,7 @@ h3 {
 @keyframes scroll-4 {
 
   0% {
-    /* transform: translateY(-166%); */
-    transform: translateY(-150%);
+    transform: translateY(-148%);
   }
 
   100% {
