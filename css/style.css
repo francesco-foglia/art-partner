@@ -144,23 +144,23 @@ main {
 }
 
 .slider-1 {
-  height: 100%;
-  animation: scroll-1 110s linear infinite;
+  /* height: 100%; */
+  animation: scroll-1 60s linear infinite;
 }
 
 .slider-2 {
-  height: 100%;
-  animation: scroll-2 110s linear infinite;
+  /* height: 100%; */
+  animation: scroll-2 60s linear infinite;
 }
 
 .slider-3 {
-  height: 100%;
-  animation: scroll-3 110s linear infinite;
+  /* height: 100%; */
+  animation: scroll-3 60s linear infinite;
 }
 
 .slider-4 {
-  height: 100%;
-  animation: scroll-4 110s linear infinite;
+  /* height: 100%; */
+  animation: scroll-4 60s linear infinite;
 }
 
 .slide {
@@ -236,7 +236,7 @@ h3 {
   }
 
   100% {
-    transform: translateY(-140%);
+    transform: translateY(-50%);
   }
 
 }
@@ -244,7 +244,7 @@ h3 {
 @keyframes scroll-2 {
 
   0% {
-    transform: translateY(-190%);
+    transform: translateY(-50%);
   }
 
   100% {
@@ -260,7 +260,7 @@ h3 {
   }
 
   100% {
-    transform: translateY(-130%);
+    transform: translateY(-50%);
   }
 
 }
@@ -268,7 +268,7 @@ h3 {
 @keyframes scroll-4 {
 
   0% {
-    transform: translateY(-148%);
+    transform: translateY(-50%);
   }
 
   100% {
